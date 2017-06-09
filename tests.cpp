@@ -27,6 +27,32 @@ TEST(App,stopCoffeeMachine_FAIL)
 	EXPECT_NE(-1, stop);
 }
 
+TEST(Machine, CheckConstructor_Machine) 
+{
+	Machine m = Machine("Maszyna",1000);
+	ASSERT_EQ("Maszyna (klasa bazowa)", m.getType());
+	ASSERT_EQ(1000, m.getModel());
+}
+
+TEST(CoffeeMachine, CheckConstructor_CoffeeMachine) 
+{
+	CoffeeMachine c = CoffeeMachine("Kawomat",666);
+	ASSERT_EQ("Kawomat (klasa bazowa)", c.getType());
+	ASSERT_EQ(666, c.getModel());
+	ASSERT_EQ(0, c.coffeeCounter[0]);
+	ASSERT_EQ(0, c.coffeeCounter[1]);
+	ASSERT_EQ(0, c.coffeeCounter[2]);
+	ASSERT_EQ(0, c.coffeeCounter[3]);
+}
+
+TEST(WeldingMaschine, CheckConstructor_WeldingMaschine)
+{
+	WeldingMachine wm = WeldingMachine("Spawarka",3000);
+	ASSERT_EQ("Spawarka (klasa bazowa)", wm.getType());
+	ASSERT_EQ(3000, wm.getModel());
+	
+}
+
 int main(int argc, char **argv)
 {
 	testing::InitGoogleTest(&argc, argv);
