@@ -5,7 +5,7 @@
  *      Author: xyhu
  */
 
-#include "CoffeeMachine.h"
+#include "CoffeeMachine.hpp"
 
 int CoffeeMachine::startCoffeeMachine()
 {

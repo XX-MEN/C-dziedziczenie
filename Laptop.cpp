@@ -5,7 +5,7 @@
  *      Author: xyhu
  */
 
-#include "Laptop.h"
+#include "Laptop.hpp"
 
 int Laptop::onBateries() {
 	std::cout << "Pracuję bez prądu w gniazdku\n";

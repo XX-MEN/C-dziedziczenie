@@ -1,4 +1,5 @@
-#include "machine.h"
+#include "machine.hpp"
+
 #include <iostream>
 #include <string>
 

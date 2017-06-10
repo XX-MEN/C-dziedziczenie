@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
-#include "machine.h"
-#include "CoffeeMachine.h"
-#include "WeldingMachine.h"
-#include "Computer.h"
-#include "Laptop.h"
+#include "CoffeeMachine.hpp"
+#include "Computer.hpp"
+#include "Laptop.hpp"
+#include "machine.hpp"
+#include "WeldingMachine.hpp"
 
 TEST(makeCoffeeTest, TestZwracania) {
 	CoffeeMachine cm2("Kawomat", 666);

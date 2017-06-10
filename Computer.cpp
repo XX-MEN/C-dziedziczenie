@@ -5,7 +5,7 @@
  *      Author: xyhu
  */
 
-#include "Computer.h"
+#include "Computer.hpp"
 
 void Computer::calculating() {
 	std::cout << "Przeliczam wszystko\n";

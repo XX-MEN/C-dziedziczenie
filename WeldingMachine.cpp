@@ -4,7 +4,7 @@
  *  Created on: 10.06.2017
  *      Author: xyhu
  */
-#include "WeldingMachine.h"
+#include "WeldingMachine.hpp"
 
 void WeldingMachine::welding() {
 	std::cout << "Spawam\n";

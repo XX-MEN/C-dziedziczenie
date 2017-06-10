@@ -5,14 +5,16 @@
  *      Author: xyhu
  */
 
-#include "machine.h"
-#include "CoffeeMachine.h"
-#include "WeldingMachine.h"
-#include "Computer.h"
-#include "Laptop.h"
+#include "functions.hpp"
+
 #include <vector>
-#include "functions.h"
 #include <iostream>
+
+#include "CoffeeMachine.hpp"
+#include "Computer.hpp"
+#include "Laptop.hpp"
+#include "machine.hpp"
+#include "WeldingMachine.hpp"
 
 void polimorfizmIdziedziczenie() {
 
