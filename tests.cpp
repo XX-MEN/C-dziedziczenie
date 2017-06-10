@@ -1,5 +1,9 @@
-#include "machine.h"
 #include <gtest/gtest.h>
+#include "machine.h"
+#include "CoffeeMachine.h"
+#include "WeldingMachine.h"
+#include "Computer.h"
+#include "Laptop.h"
 
 TEST(makeCoffeeTest, TestZwracania) {
 	CoffeeMachine cm2("Kawomat", 666);
@@ -50,10 +54,24 @@ TEST(WeldingMaschine, CheckConstructor_WeldingMaschine)
 	WeldingMachine wm = WeldingMachine("Spawarka",3000);
 	ASSERT_EQ("Spawarka (klasa bazowa)", wm.getType());
 	ASSERT_EQ(3000, wm.getModel());
-	
 }
 
-int main(int argc, char **argv)
+TEST(Computer, CheckConstructor_Computer)
+{
+	Computer cp = Computer("Server", 2017);
+	ASSERT_EQ("Server (klasa bazowa)", cp.getType());
+	ASSERT_EQ(2017, cp.getModel());
+}
+
+TEST(Laptop, CheckConstructor_Laptop)
+{
+	Laptop lt = Laptop("ThinkPad", 2018);
+	ASSERT_EQ("ThinkPad (klasa bazowa)", lt.getType());
+	ASSERT_EQ(2018, lt.getModel());
+}
+
+
+int test(int argc, char **argv)
 {
 	testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
